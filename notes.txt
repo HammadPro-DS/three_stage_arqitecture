@@ -1,0 +1,74 @@
+When code is pushed to a GitHub repository, it typically follows a **three-stage architecture** involving:
+
+---
+
+### **1. Working Directory (Working Tree)**
+
+This is where you write and modify your code files. It represents the current state of your project on your local machine.
+
+* **Actions:**
+
+  * Editing files
+  * Creating new files
+  * Deleting files
+
+---
+
+### **2. Staging Area (Index)**
+
+This is a preparation area where you tell Git which changes you want to include in the next commit. You use this area to selectively choose what to commit.
+
+* **Command:**
+
+  ```bash
+  git add <file>
+  ```
+* **Purpose:**
+
+  * Allows staging specific changes.
+  * Lets you preview what will go into the commit.
+
+---
+
+### **3. Local Repository**
+
+This is where committed changes are stored in your local Git repository. It maintains the complete history of your project.
+
+* **Command:**
+
+  ```bash
+  git commit -m "Your message"
+  ```
+* **Purpose:**
+
+  * Stores the snapshot of the project.
+  * Ready to be shared with others.
+
+---
+
+### **Final Step: Push to Remote Repository (GitHub)**
+
+Once your changes are committed locally, you push them to GitHub (the **remote repository**).
+
+* **Command:**
+
+  ```bash
+  git push origin <branch>
+  ```
+* **Effect:**
+
+  * Uploads your local commits to the GitHub repository.
+  * Updates the remote with your latest work.
+
+---
+
+### **Summary Table**
+
+| Stage                | Area             | Command      | Description               |
+| -------------------- | ---------------- | ------------ | ------------------------- |
+| 1. Working Directory | Local Filesystem | Edit files   | Where you make changes    |
+| 2. Staging Area      | Local Git        | `git add`    | Prepares files for commit |
+| 3. Local Repository  | Local Git        | `git commit` | Saves snapshot            |
+| Final Step           | GitHub (Remote)  | `git push`   | Sends commits to GitHub   |
+
+Let me know if you’d like a diagram to visualize this.

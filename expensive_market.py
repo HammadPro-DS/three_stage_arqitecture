@@ -1,0 +1,1 @@
+print("Stock market trends are showing an up")
